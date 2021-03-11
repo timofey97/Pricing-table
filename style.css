@@ -1,0 +1,234 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background: -webkit-gradient(linear, right top, left top, from(#7275a4), color-stop(#4a4872), to(#302d4a));
+  background: linear-gradient(to left, #7275a4, #4a4872, #302d4a);
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pricing-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  height: 450px;
+}
+
+.pricing-table .individual, .pricing-table .shared, .pricing-table .limited {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.pricing-table .individual h2, .pricing-table .shared h2, .pricing-table .limited h2 {
+  text-align: center;
+  position: relative;
+  font-size: 25px;
+}
+
+.pricing-table .individual h2::after, .pricing-table .shared h2::after, .pricing-table .limited h2::after {
+  width: 20px;
+  height: 4px;
+  background: #f7f7f7;
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.pricing-table .individual .price, .pricing-table .shared .price, .pricing-table .limited .price {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.09);
+  width: 100%;
+  font-size: 350px;
+  top: -40px;
+  text-align: center;
+  font-weight: 900;
+  z-index: -100;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.pricing-table .individual .price span, .pricing-table .shared .price span, .pricing-table .limited .price span {
+  font-size: 50px;
+  position: absolute;
+  top: 100px;
+  left: 10px;
+}
+
+.pricing-table .individual {
+  background: linear-gradient(135deg, #5464bf, #6a99ca, #6eb0be);
+}
+
+.pricing-table .shared {
+  background: linear-gradient(135deg, #fa90a3, #d589d2, #bb8ae6);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  z-index: 10;
+  -webkit-box-shadow: 0 0 24px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 24px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-table .shared .continue {
+  top: 45px;
+}
+
+.pricing-table .shared canvas {
+  position: absolute;
+  bottom: 0;
+  border-radius: 20px;
+  width: 100%;
+  height: 90px;
+}
+
+.pricing-table .limited {
+  background: linear-gradient(135deg, #ca689e, #de8ca1, #dbbc88);
+}
+
+.pricing-table .feature {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.pricing-table .feature h3 {
+  margin: 5px 0;
+  color: rgba(255, 255, 255, 0.61);
+  font-weight: 400;
+}
+
+.pricing-table .feature h3 span {
+  color: #f7f7f7;
+  font-weight: 700;
+}
+
+.pricing-table .feature .progress {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 25px;
+  border-radius: 15px;
+  position: relative;
+  -webkit-box-shadow: 0 8px 16px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-table .feature .progress.office::after {
+  content: '';
+  position: absolute;
+  background: linear-gradient(135deg, #fa90a3, #d589d2, #bb8ae6);
+  height: 100%;
+  width: 80%;
+  border-radius: 15px;
+}
+
+.pricing-table .feature .progress.home::after {
+  content: '';
+  position: absolute;
+  background: linear-gradient(135deg, #ca689e, #de8ca1, #dbbc88);
+  height: 100%;
+  width: 50%;
+  border-radius: 15px;
+}
+
+.pricing-table .large-feature {
+  text-align: center;
+}
+
+.pricing-table .large-feature p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.pricing-table .large-feature h3 {
+  padding: 20px 0;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.pricing-table .continue {
+  position: relative;
+  z-index: 12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pricing-table .continue button {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  cursor: pointer;
+  width: 80%;
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+  color: #86868b;
+  font-size: 17px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 2px 12px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 12px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.pricing-table .continue button:active, .pricing-table .continue button:focus {
+  outline: none;
+}
+
+.pricing-table .continue button img {
+  height: 12px;
+  margin-left: 10px;
+}
+
+.pricing-table .continue button:hover, .pricing-table .continue button:focus, .pricing-table .continue button:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  color: #232b61;
+}
+
+.pricing-table .continue button:hover img, .pricing-table .continue button:focus img, .pricing-table .continue button:active img {
+  -webkit-filter: invert(44%) sepia(28%) saturate(1217%) hue-rotate(194deg) brightness(85%) contrast(90%);
+          filter: invert(44%) sepia(28%) saturate(1217%) hue-rotate(194deg) brightness(85%) contrast(90%);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    
+    <div class="pricing-table">
+        <div class="individual">
+            
+            <h2>Individual</h2>
+            <div class="feature">
+                <h3>Office <span>20 Gb</span></h3>
+                <div class="progress office"></div>
+            </div>
+            
+            <div class="feature">
+                <h3>Home <span>10 Gb</span></h3>
+                <div class="progress home"></div>
+            </div>
+            <div class="continue">
+                <button>Continue
+                    <img src="/next.png" alt="arrow">
+                </button>
+            </div>
+            <div class="price">
+                <span>&dollar;</span>2
+            </div>
+        </div>
+        <div class="shared">
+            <h2>Shared</h2>
+            <div class="large-feature">
+                <p>Family</p>
+                <h3>100 Gb</h3>
+            </div>
+            <div class="continue">
+                <button>Continue
+                    <img src="/next.png" alt="arrow">
+                </button>
+            </div>
+            <canvas class="wave-xp"></canvas>
+            <div class="price">
+                <span>&dollar;</span>6
+            </div>
+        </div>
+        <div class="limited">
+            <h2>Unlimited</h2>
+            <div class="large-feature">
+                <p>Infinite Share</p>
+                <h3>1 Year</h3>
+            </div>
+            <div class="continue">
+                <button>Continue
+                    <img src="/next.png" alt="arrow">
+                </button>
+            </div>
+            <div class="price">
+                <span>&dollar;</span>9
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.1/dat.gui.min.js"></script>
+<script  src="script.js"></script>
+</body>
+</html>
